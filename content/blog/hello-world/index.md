@@ -23,7 +23,7 @@ Oh, and here's a great quote from this Wikipedia on
 
 You can also write code blocks here!
 
-```js
+```ts
 const saltyDuckEgg = "chinese preserved food product"
 ```
 
