@@ -27,7 +27,10 @@ const Listings = ({ firstListName, secondListName }) => {
         style={{ width: "12rem" }}
         className={"mt-5 ml-2 bg-dark text-white"}
       >
-        <Card.Header className="ml-4 post-list text-center small" as="h5">
+        <Card.Header
+          className="ml-4 post-list text-center small bg-dark"
+          as="h5"
+        >
           {firstListName}
         </Card.Header>
         <ListGroup className="ml-2" variant="flush">
@@ -35,7 +38,7 @@ const Listings = ({ firstListName, secondListName }) => {
             return (
               <ListGroupItem action variant="light">
                 <li
-                  className={"post-list-items mx-4 "}
+                  className={"post-list-items mx-4"}
                   key={post.frontmatter.title}
                 >
                   <h6 className="ml-2 mx-1">

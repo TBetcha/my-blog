@@ -41,7 +41,7 @@ const BlogIndex = ({ data, location }) => {
             </Col>
             <Col xs={9} md={9} lg={9} xl={9}>
               <div className={"col sm-8 md-9 lg-9 container"}>
-                <h1 className="mb-5 text-center">Most Recent</h1>
+                <h1 className="mb-3 text-center">Most Recent</h1>
                 <ol style={{ listStyle: `none` }}>
                   {posts.map(post => {
                     const title = post.frontmatter.title || post.fields.slug
@@ -54,11 +54,17 @@ const BlogIndex = ({ data, location }) => {
                         >
                           <header>
                             <h5>
-                              <Link to={post.fields.slug} itemProp="url">
+                              <Link
+                                to={post.fields.slug}
+                                itemProp="url"
+                                className="n-link"
+                              >
                                 <span itemProp="headline">{title}</span>
                               </Link>
                             </h5>
-                            <small>{post.frontmatter.date}</small>
+                            <small className="text-secondary fst-italic">
+                              {post.frontmatter.date}
+                            </small>
                           </header>
                           <section>
                             <p
