@@ -24,10 +24,10 @@ const Listings = ({ firstListName, secondListName }) => {
   return (
     <Container>
       <Card
-        style={{ width: "14rem" }}
+        style={{ width: "12rem" }}
         className={"mt-5 ml-2 bg-dark text-white"}
       >
-        <Card.Header className="ml-4 post-list text-center" as="h5">
+        <Card.Header className="ml-4 post-list text-center small" as="h5">
           {firstListName}
         </Card.Header>
         <ListGroup className="ml-2" variant="flush">
@@ -35,12 +35,12 @@ const Listings = ({ firstListName, secondListName }) => {
             return (
               <ListGroupItem action variant="light">
                 <li
-                  className={"post-list-items mx-4"}
+                  className={"post-list-items mx-4 "}
                   key={post.frontmatter.title}
                 >
                   <h6 className="ml-2 mx-1">
                     <Link
-                      className="n-link"
+                      className="n-link small"
                       to={post.fields.slug}
                       itemProp="url"
                     >
@@ -52,7 +52,8 @@ const Listings = ({ firstListName, secondListName }) => {
             )
           })}
         </ListGroup>
-        <Card.Header className="ml-4 post-list text-center" as="h5">
+        {/* !! Maybe add another section when I have more posts and add stuff relatd to me like links etc. */}
+        {/* <Card.Header className="ml-4 post-list text-center" as="h5">
           {secondListName}
         </Card.Header>
         <ListGroup className="ml-2" variant="flush">
@@ -76,7 +77,7 @@ const Listings = ({ firstListName, secondListName }) => {
               </ListGroupItem>
             )
           })}
-        </ListGroup>
+        </ListGroup> */}
         <Card.Body>{""}</Card.Body>
       </Card>
     </Container>

@@ -7,18 +7,18 @@ import { PageProps } from "gatsby"
 const NavHeader = ({ siteTitle }) => {
   return (
     <Navbar
-      className="my-nav"
+      className="fw-light"
       collapseOnSelect
       expand="lg"
       bg="dark"
       variant="dark"
     >
       <Container fluid>
-        <Navbar.Brand href="#home" className="d-flex justify-content-vertical">
+        <Navbar.Brand href="/" className="d-flex justify-content-vertical">
           <div className="pr-2">
             <StaticImage
               src="../images/lambda_rainbow.png"
-              formats={["auto", "webp", "avif"]}
+              formats={["auto", "webp"]}
               layout="fixed"
               width={50}
               height={50}
@@ -32,7 +32,7 @@ const NavHeader = ({ siteTitle }) => {
         </Navbar.Brand>
         <Navbar className="justify-content-end">
           <Nav>
-            <Nav.Link href="#deets">About</Nav.Link>
+            <Nav.Link href="/about">About</Nav.Link>
             <Nav.Link href="#deets">Posts</Nav.Link>
             <Nav.Link eventKey={3} href="#memes">
               Contact

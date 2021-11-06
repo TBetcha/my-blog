@@ -35,7 +35,7 @@ const Bio = () => {
       <StaticImage
         className="bio-avatar"
         layout="fixed"
-        formats={["auto", "webp", "avif"]}
+        formats={["auto", "webp"]}
         src="../images/my_pic.png"
         width={75}
         height={75}
@@ -44,7 +44,11 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
-          Hi, I'm <strong>{author.name}</strong> {author?.summary || null}
+          Hi, I'm{" "}
+          <a href="http://www.twitter.com/tbetcha" className="text-dark">
+            <strong>{author.name}</strong>
+          </a>{" "}
+          {author?.summary || null}
           {` `}
           <br />
         </p>
