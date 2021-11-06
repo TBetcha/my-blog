@@ -33,10 +33,7 @@ const BlogIndex = ({ data, location }) => {
           <div className={"row"}>
             <Col xs={3} md={3} lg={3} xl={3}>
               <div className={"col sm-4 lg-3 md-3"}>
-                <Listings
-                  firstListName={"ALL POSTS"}
-                  secondListName={"EXTRAS"}
-                />
+                <Listings firstListName={"popular"} secondListName={"extras"} />
               </div>
             </Col>
             <Col xs={9} md={9} lg={9} xl={9}>

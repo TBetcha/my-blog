@@ -28,7 +28,7 @@ const Listings = ({ firstListName, secondListName }) => {
         className={"mt-5 ml-2 bg-dark text-white"}
       >
         <Card.Header
-          className="ml-4 post-list text-center small bg-dark"
+          className="ml-4 post-list text-center small bg-dark text-uppercase"
           as="h5"
         >
           {firstListName}
