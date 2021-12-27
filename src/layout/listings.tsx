@@ -23,10 +23,7 @@ const Listings = ({ firstListName, secondListName }) => {
   const posts = data.allMarkdownRemark.nodes
   return (
     <Container>
-      <Card
-        style={{ width: "12rem" }}
-        className={"mt-5 ml-2 bg-dark text-white"}
-      >
+      <Card style={{ width: "11rem" }} className={"mt-5 bg-dark text-white"}>
         <Card.Header
           className="ml-4 post-list text-center small bg-dark text-uppercase"
           as="h5"
@@ -37,10 +34,7 @@ const Listings = ({ firstListName, secondListName }) => {
           {posts.map(post => {
             return (
               <ListGroupItem action variant="light">
-                <li
-                  className={"post-list-items mx-4"}
-                  key={post.frontmatter.title}
-                >
+                <li className={"post-list-items"} key={post.frontmatter.title}>
                   <h6 className="ml-2 mx-1">
                     <Link
                       className="n-link small"

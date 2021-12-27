@@ -35,7 +35,6 @@ body {
 }
 
 .post-list-items {
-  /* list-style-image: url(../src/images/goldstar.png); */
   margin-right: 3rem;
   align-items: center;
   list-style: none;
@@ -46,6 +45,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
 .content {

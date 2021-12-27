@@ -33,10 +33,10 @@ const NavHeader = ({ siteTitle }) => {
         <Navbar className="justify-content-end">
           <Nav>
             <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="#deets">Posts</Nav.Link>
-            <Nav.Link eventKey={3} href="#memes">
+            <Nav.Link href="/">Posts</Nav.Link>
+            {/* <Nav.Link eventKey={3} href="#memes">
               Contact
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Navbar>
       </Container>

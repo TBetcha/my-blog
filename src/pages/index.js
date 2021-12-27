@@ -32,12 +32,12 @@ const BlogIndex = ({ data, location }) => {
         <Row>
           <div className={"row"}>
             <Col xs={3} md={3} lg={3} xl={3}>
-              <div className={"col sm-4 lg-3 md-3"}>
+              <div>
                 <Listings firstListName={"popular"} secondListName={"extras"} />
               </div>
             </Col>
             <Col xs={9} md={9} lg={9} xl={9}>
-              <div className={"col sm-8 md-9 lg-9 container"}>
+              <div className={"container"}>
                 <h1 className="mb-3 text-center">Most Recent</h1>
                 <ol style={{ listStyle: `none` }}>
                   {posts.map(post => {
