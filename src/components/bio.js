@@ -8,13 +8,8 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import {
-  FaEnvelope,
-  FaFacebookSquare,
-  FaLinkedinIn,
-  FaTwitter,
-  faTwitter,
-} from "react-icons/fa"
+import { FaEnvelope, FaLinkedinIn, FaTwitter } from "react-icons/fa"
+import "../style.css"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -54,15 +49,20 @@ const Bio = () => {
             />
             <div className="mx-2">
               <br />
-              <a href="https://www.twitter.com/tbetcha">
+              <a className="n-link" href="https://www.twitter.com/tbetcha">
                 <FaTwitter />
               </a>
               <br />
-              <a href="https://www.linkedin.com/in/troy-boettger-89467185/">
+              <a
+                className="n-link"
+                href="https://www.linkedin.com/in/troy-boettger-89467185/"
+              >
                 <FaLinkedinIn />
               </a>
               <br />
-              <FaEnvelope />
+              <a className="n-link" href="mailto:troy.boettger@gmail.com">
+                <FaEnvelope />
+              </a>
             </div>
           </div>
           <div class="col-md-8">
@@ -116,3 +116,18 @@ const Bio = () => {
 }
 
 export default Bio
+
+// export const pageQuery = graphql`
+//   query {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//     SiteSiteMetaData {
+//       author
+//       title
+//       social
+//     }
+//   }
+// `
