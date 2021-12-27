@@ -1,7 +1,5 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 
-# my-blog
-
 <h1 align="center">
   Code With Troy
 </h1>
